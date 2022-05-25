@@ -1,0 +1,46 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch__block {
+  position: absolute;
+  border-radius: 34px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E1E7EB;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch__block::before {
+  content: "";
+  border-radius: 100%;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: 0 0 15px #2020203d;
+  background-image: url("../svgs/sun-new.svg");
+  background-position: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+
+html[data-theme="dark"] .switch__block::before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px) rotate(-30deg);
+  background-image: url("../svgs/moon.svg");
+}

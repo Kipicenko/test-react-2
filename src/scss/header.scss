@@ -1,0 +1,75 @@
+.header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--correction);
+  background-color: var(--headerBG);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    &-title {
+      font-size: 21px;
+      font-weight: 600;
+      color: white;
+      margin-left: 20px;
+    }
+
+    &-right {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-left {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  color: white;
+}
+
+.burger::after, .burger::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger__line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+}

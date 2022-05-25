@@ -1,0 +1,126 @@
+.promoCodes-title {
+  font-size: 24px;
+  text-align: center;
+  color: var(--fontColor);
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+
+.promoCodes-wrapper {
+  position: relative;
+}
+
+.promoCodes-loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.promoCodes-loading__svg {
+  & circle {
+    transition: fill 0.4s;
+  }
+}
+
+html[data-theme="light"] .promoCodes-loading__svg {
+  & circle:first-child {
+    fill: #0a9cf7;
+    transition: fill 0.4s;
+  }
+
+  & circle:nth-child(2) {
+    fill: #006ff7;
+    transition: fill 0.4s;
+  }
+
+  & circle:last-child{
+    fill: #0a9cf7;
+    transition: fill 0.4s;
+  }
+}
+
+.promo-edit {
+
+  &__link {
+    display: block;
+    color: #42AAFF;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+    text-align: center;
+    color: var(--fontColor);
+    margin-bottom: 20px;
+    transition: 0.4s;
+  }
+
+  &__btn {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #2e6359;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #51B09F;
+    }
+  }
+}
+
+.container-input:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: column;
+
+  &-p__error {
+    font-size: 14px;
+    color: #F21400;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+
+  & label {
+    margin-bottom: 10px;
+    color: var(--fontColor);
+    transition: 0.4s;
+  }
+
+  & input {
+    width: 20%;
+    min-width: 300px;
+    background-color: #E9EFF6;
+    border-radius: 4px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+  }
+}
+
+.container-input-flex {
+  width: 20%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  & label {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.select {
+  width: 20%;
+  min-width: 300px;
+  height: 35px;
+  outline: 0;
+  background-color: #E9EFF6;
+}

@@ -1,0 +1,12 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--mainBG);
+  transition: 0.4s;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 30px;
+  }
+}

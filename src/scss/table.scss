@@ -1,0 +1,33 @@
+.table-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+
+  &__link {
+    color: #42AAFF;
+  }
+
+  &-text {
+    color: var(--fontColor);
+    transition: 0.4s;
+  }
+
+  &-th {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid var(--borderTable);
+    color: var(--fontColor);
+    transition: 0.4s;
+  }
+
+  &-td {
+    padding: 10px;
+    border: 1px solid var(--borderTable);
+    transition: 0.4s;
+  }
+}

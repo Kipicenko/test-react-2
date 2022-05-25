@@ -1,0 +1,59 @@
+@import "header";
+@import "global";
+@import "main";
+@import "sidebar";
+@import "toggle-theme";
+@import "table";
+@import "home";
+@import "promo";
+@import "CustomSelect";
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  --correction: 100px
+}
+
+html[data-theme="light"] {
+  --headerBG: rgb(146, 181, 217);
+  --sidebarBG: #f4f4f4;
+  --mainBG: white;
+  --fontColor: black;
+  --activeLink: #c0daf4;
+  --sublistItem: #DBDBDB;
+  --borderTable: #dddddd;
+  --selectColor: #E9EFF6;
+}
+
+html[data-theme="dark"] {
+  --headerBG: #0c0f1d;
+  --sidebarBG: #1b1d2a;
+  --mainBG: #343746;
+  --fontColor: white;
+  --activeLink: #0c0f1d;
+  --sublistItem: #2D376B;
+  --borderTable: #5E5E5E;
+  --selectColor: #9BA4D1;
+}
+
+.wrapper {
+  padding-top: var(--correction);
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.btn-reset {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
