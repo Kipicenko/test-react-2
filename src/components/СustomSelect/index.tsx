@@ -4,7 +4,7 @@ import cn from "classnames";
 
 
 type Option = {
-    value: string,
+    value: string | number,
     label: string
 }
 
