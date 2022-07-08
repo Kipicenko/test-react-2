@@ -23,7 +23,7 @@ function PromoCodes({promoFilter}: {promoFilter: string}) {
                 setData(result.data)
                 setTimeout(() => {
                     setLoading(false)
-                }, 1000) // сделал ради того, чтобы не было резкой сменны ( на быстром интернете:) ), но для медленного интернета, наверно, не подходит
+                }, 1000) // фейковая загрузка для локал хост. При деплое куда-нибудь удалить setTimeout
             } catch (error) {
                 alert("Ошибка получения промокодов, попробуйте еще раз")
                 console.error(error)

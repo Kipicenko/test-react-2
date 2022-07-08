@@ -1,5 +1,5 @@
-import {ReactComponent as ArrowSVG} from "../../svgs/arrow.svg";
-import {useEffect, useState} from "react";
+import { ReactComponent as ArrowSVG } from "../../svgs/arrow.svg";
+import { useEffect, useState } from "react";
 import cn from "classnames";
 
 
@@ -42,7 +42,7 @@ function CustomSelect({options, value, onChange, className}: CustomSelect) {
                     <span className="custom-select-header__title">
                         {options.find(option => option.value === value)?.label || "Загрузка"}
                     </span>
-                    <ArrowSVG width={16} height={16}/>
+                    <ArrowSVG width={16} height={16} />
                 </div>
                 <div
                     className={cn('custom-select-menu', {
